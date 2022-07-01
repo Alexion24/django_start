@@ -1,4 +1,10 @@
 from django.views.generic.base import TemplateView
+from django.shortcuts import redirect
+from django.urls import reverse
+
+
+def my_view(request):
+    return redirect(reverse('calc', kwargs={'a': 40, 'b': 2}))
 
 
 class IndexPageView(TemplateView):

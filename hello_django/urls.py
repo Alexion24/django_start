@@ -19,7 +19,7 @@ from hello_django import views
 
 
 urlpatterns = [
-    path('', views.IndexPageView.as_view()),
+    path('', views.my_view),
     path('calc/', include('hello_django.calc.urls')),
     # path('admin/', admin.site.urls),
 ]
