@@ -6,7 +6,7 @@ urlpatterns = [
     path('', views.IndexView.as_view()),
     path(
         '<int:a>/<int:b>',
-        views.index,
+        views.Calc.as_view(),
         name='calc'
     )
 ]
